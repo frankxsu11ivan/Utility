@@ -1,4 +1,13 @@
+#Utility 2
+bash -lc find /mnt/data -maxdepth 1 -type f -printf '%f
+' | sort | tail -20
+
+Coding and executing
+bash -lc rm -rf /mnt/data/_farnam && mkdir -p /mnt/data/_farnam && python /home/oai/skills/pdfs/scripts/render_pdf.py '/mnt/data/Page672674OPW54338_IFC_VOLUME 1_ MAINLINE.pdf' --out_dir /mnt/data/_farnam --dpi 200 && ls -lh /mnt/data/_farnam
+
 # Utility
+
+
 looking for estimated take off 
 I am checking for the actual PDF file path, as the file might be located in the root directory.
 
